@@ -1,38 +1,263 @@
-.App {
-  text-align: center;
+html {
+  -webkit-box-sizing: border-box !important;
+  box-sizing: border-box !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit !important;
+  box-sizing: inherit !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-size: 1rem;
+  line-height: 1.3;
+  font-family: "Marcellus", serif !important;
+  color: #9fabb2;
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1,
+h2,
+h3 {
+  color: #4c545d;
+  font-weight: 600;
+}
+
+.navbar {
+  font-family: "Karla", sans-serif;
+  font-size: 15px;
+  padding: 0px 10px;
+}
+
+.navbar #navbarScroll {
+  -webkit-box-pack: end !important;
+  -ms-flex-pack: end !important;
+  justify-content: flex-end !important;
+}
+
+.navbar #navbarScroll .lmpm-icon {
+  width: 10px;
+  padding-top: 8px;
+}
+
+.navbar #navbarScroll a.nav-link.active {
+  color: #152e56 !important;
+  font-weight: bold;
+}
+
+.navbar #navbarScroll button {
+  padding: 3px 40px;
+  color: #152e56 !important;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #e1dbcf;
+}
+
+.filter {
+  padding: 10px 40px;
+}
+
+.filter .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.filter .col-4 {
+  font-family: "Karla", sans-serif !important;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.filter .col-4 .form-control {
+  padding: 5px 5px;
+  background-color: #fafafa;
+}
+
+.filter .col-4 button {
+  background-color: #002047 !important;
   color: white;
+  padding: 5px 140px;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.banner {
+  font-size: 14px !important;
+  padding: 10px 60px 10px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.banner .banner-wrapper {
+  padding: 50px 20px 20px 20px;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.banner .dropdown button {
+  font-family: "Karla", sans-serif;
+  background-color: white;
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+  color: #002047;
+  font-weight: bold;
+  border-radius: 0px;
+}
+
+.banner .dropdown .dropdown-toggle::after {
+  margin-left: 20px;
+}
+
+.footer .footer-wrapper {
+  padding: 70px 80px;
+}
+
+.footer h1 {
+  padding-top: 20px;
+  color: #000000;
+  font-size: 2.6666666666667rem;
+}
+
+.footer h4 {
+  color: #000000;
+}
+
+.footer .star {
+  color: red;
+}
+
+.footer .login {
+  font-size: 11pt;
+  font-family: "Karla", sans-serif;
+}
+
+.footer .login .form-label {
+  color: #002047;
+  font-weight: bold;
+}
+
+.footer .login button {
+  margin-top: 20px;
+  background-color: #002047;
+  color: white;
+  padding: 5px 20px;
+}
+
+.cards {
+  padding: 20px;
+}
+
+.cards .card {
+  border: none;
+}
+
+.cards .cardb {
+  border: 0px;
+  position: relative;
+}
+
+.cards .btn {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  color: white;
+  background-color: black;
+  opacity: 0.6;
+  border: none;
+  padding: 3px;
+  font-size: 9px;
+}
+
+.cards .card-body {
+  padding: 10px 0px;
+}
+
+.cards .card-icons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cards .icon {
+  padding-left: 10px;
+  font-size: 10px;
+  font-family: "Karla", sans-serif;
+  font-weight: bold;
+}
+
+.cards .icon .lmpm-icon {
+  width: 20px;
+}
+
+.content .content-wrapper {
+  background-color: #f6f6f6;
+  padding: 0px 70px 0px 80px;
+}
+
+.content .content-home {
+  padding-top: 40px;
+}
+
+.content p.address {
+  font-family: "Karla", sans-serif;
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+}
+
+.bfooter {
+  font-family: "Karla", sans-serif !important;
+  font-size: 11pt;
+  font-weight: bold;
+}
+
+.bfooter .bfooter-wrapper {
+  padding: 30px !important;
+}
+
+.bfooter .list-group-item {
+  list-style-type: none;
+  border: none;
+  padding: 3px;
+}
+
+.bfooter p {
+  font-weight: normal;
+  padding-bottom: 7px;
+}
+
+.bfooter .list-group-item:hover {
+  color: #999999;
+  cursor: pointer;
+}
+
+.bfooter .last .list-group-item {
+  color: #999999 !important;
+}
+
+@media only screen and (max-width: 600px) {
+  #children {
+    width: 100%;
+    margin-top: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .banner-wrapper {
+    margin-left: 12%;
+  }
+  .content-wrapper,
+  .footer-wrapper {
+    padding: 0px 30px !important;
+  }
+  #filter {
+    margin-top: 20px;
+
+    text-align: center;
   }
 }
+/*# sourceMappingURL=style.css.map */
